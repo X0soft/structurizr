@@ -1,3 +1,0 @@
-# kontenery
-appsonarqube -> dbsonarqube
-# komponenty

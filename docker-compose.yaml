@@ -1,0 +1,11 @@
+version: "3"
+services:
+  structurizr:
+    image: structurizr/lite
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./Documentations:/usr/local/structurizr
+    environment:
+      - STRUCTURIZR_DATA_PATH=/data
+      - STRUCTURIZR_PORT=8080
