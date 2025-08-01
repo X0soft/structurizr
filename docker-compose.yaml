@@ -1,11 +1,27 @@
-version: "3"
+version: "3.8"
+
 services:
   structurizr:
-    image: structurizr/lite
+    image: structurizr/lite:latest
+    container_name: structurizr-lite
     ports:
       - "8080:8080"
     volumes:
       - ./Documentations:/usr/local/structurizr
     environment:
-      - STRUCTURIZR_DATA_PATH=/data
+      - STRUCTURIZR_DATA_PATH=/usr/local/structurizr
       - STRUCTURIZR_PORT=8080
+      - STRUCTURIZR_WORKSPACE_PATH=/usr/local/structurizr
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - structurizr-network
+
+networks:
+  structurizr-network:
+    driver: bridge
