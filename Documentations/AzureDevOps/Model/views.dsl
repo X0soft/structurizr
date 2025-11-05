@@ -1,9 +1,9 @@
-systemContext azuredevops {
-    include *
-    autolayout lr
-}
+// systemContext azuredevops {
+//     include *
+//     autolayout lr
+// }
 
-container azuredevops {
-    include *
-    autolayout lr
-}
+// container azuredevops {
+//     include *
+//     autolayout lr
+// }

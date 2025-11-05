@@ -1,9 +1,9 @@
-systemContext bitbucket {
-    include *
-    autolayout lr
-}
+// systemContext bitbucket {
+//     include *
+//     autolayout lr
+// }
 
-container bitbucket {
-    include *
-    autolayout lr
-}
+// container bitbucket {
+//     include *
+//     autolayout lr
+// }

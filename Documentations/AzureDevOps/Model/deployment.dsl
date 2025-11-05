@@ -14,11 +14,11 @@ deploymentEnvironment "Production" {
         deploymentNode "LoadBalancer" {
             containerInstance azuredevopsvip.vipazuredevops1
             containerInstance azuredevopsvip.vipazuredevops2
-        }   
+        }
         deploymentNode "OpenSearch" {
             containerInstance azuredevops.opsazuredevops
         }
-    }   
+    }
     deploymentNode "External Services" {
         deploymentNode "F5 Load Balancer" {
             containerInstance azuredevopsvip.vipazuredevops1
@@ -32,7 +32,7 @@ deploymentEnvironment "Production" {
         deploymentNode "Grafana" {
             containerInstance systemgrafana.grafana
         }
-        deploymentNode "Zabbix" {           
+        deploymentNode "Zabbix" {
             containerInstance systemzabbix.globallzabbix
         }
         deploymentNode "Splunk" {

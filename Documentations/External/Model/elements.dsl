@@ -11,6 +11,10 @@ systemNFS = softwaresystem "External systems" {
         technology "NFS"
         url "https://tfsm.domena.com"
     }
+    NFSAD = container "NFS zasób dla Azure DevOps" {
+        technology "NFS"
+        url "https://tfsm.domena.com"
+    }
 }
 systemzabbix = softwaresystem "Monitoring zabbix" {
     globallzabbix = container "Zabbix" {

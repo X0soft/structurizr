@@ -20,4 +20,12 @@ azuredevops = softwaresystem "Azure DevOps" {
             "wiki" "https://wiki.domena.com/azuredevops-agent"
         }
     }
+    opsazuredevops = container "Azure DevOps OpenSearch" {
+        description "OpenSearch dla Azure DevOps"
+        technology "OpenSearch"
+        url "https://dev.azure.com/search"
+        properties {
+            "wiki" "https://wiki.domena.com/azuredevops-opensearch"
+        }
+    }
 }

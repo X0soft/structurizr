@@ -2,13 +2,13 @@ deploymentEnvironment "Production" {
     deploymentNode "Kubernetes Cluster" {
         deploymentNode "Namespace: artifactory" {
             deploymentNode "Pod: artifactory-app" {
-                containerInstance artifactory.appartifactory
+                containerInstance artifactoryapp.appartifactory
             }
             deploymentNode "Pod: artifactory-db" {
-                containerInstance artifactory.dbartifactory
+                containerInstance artifactoryapp.dbartifactory
             }
             deploymentNode "Pod: artifactory-proxy" {
-                containerInstance artifactory.proxyartifactory
+                containerInstance artifactoryapp.proxyartifactory
             }
         }
     }

@@ -30,3 +30,11 @@ sonarqubescanner = softwaresystem "SonarQube Scanner" {
         }
     }
 }
+sonarqubevip = softwaresystem "F5 dla SQ" {
+    vipsonarqube1 = container "Adres VIP 1" {
+        description "10.255.255.80"
+    }
+    vipsonarqube2 = container "Adres VIP 2" {
+        description "10.254.255.80"
+    }
+}
